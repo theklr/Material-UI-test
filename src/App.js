@@ -1,21 +1,11 @@
 import React from 'react';
 import MultiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import AppBar from 'material-ui/AppBar';
-import Toolbar from'material-ui/Toolbar'
-import Typography from 'material-ui/Typography'
-import Grid from 'material-ui/Grid';
+import Admin from './components/Admin/AdminContainer';
+// const isMain = false;
 
-const App = () => (
+const App = () =>
   <MultiThemeProvider>
-    <Grid md={10} containter justify="center" >
-    <AppBar>
-    <Toolbar>
-    <Typography type="title" colorInherit> Cheesesteak </Typography>
-    </Toolbar>
-    
-    </AppBar>
-    </Grid>
-  </MultiThemeProvider>
-);
+    <Admin style={{display:'flex'}}/>
+  </MultiThemeProvider>;
 
 export default App;
